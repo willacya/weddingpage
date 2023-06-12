@@ -1,0 +1,13 @@
+{
+    "images_data_file": "./images_data.json",
+    "public_path": "./public",
+    "templates_path": "./templates",
+    "images_path": "./public/images/photos",
+    "thumbnails_path": "./public/images/thumbnails",
+    "thumbnail_height": 320,
+    "title": "Staff Pictures",
+    "description": "Images of staff that I work with",
+    "background_photo": "\"\"",
+    "url": "\"\"",
+    "background_photo_offset": 30
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Willacy Wedding</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+
+
+
+<!--  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+  <!-- GOOGLE FONTS -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+    <style>
+.image-container {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.border {
+
+  border-radius: 50%;
+  height:200px;
+  width:200px;
+}
+
+.image-container .after {
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  color: #FFF;
+  border-radius: 50%;
+}
+
+.image-container:hover .after {
+  display: block;
+  background: rgba(0, 0, 0, .6);
+  border-radius: 50%;
+}
+
+#title {
+  background: url('/static/adam.jpg');
+  background-size: cover;
+  color: #fff;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  padding: 0;
+  display: flex;
+
+
+}
+
+h1 {
+  font-size: 80px;
+  font-family: sans-serif;
+  text-align: center;
+  text-shadow: 0 0 1px rgba(0, 0, 0, .1);
+  letter-spacing: -1px;
+  line-height: 0.8;
+
+}
+
+    </style>
+
+
+<div class="image-container">
+  <img src="/static/adam.jpg" class='border' />
+  <div class="after">
+
+    <div id="title">
+
+
+      <h1><b>BEST<br>MAN</b></h1>
+    </div>
+
+  </div>
+</div>
+
+
+	<script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+
+</body>

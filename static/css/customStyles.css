@@ -1,0 +1,235 @@
+
+.hypercolor {
+    color: white;
+    text-shadow: 6px 0px 10px #000;
+}
+.hypercolor:hover {
+    color: #FAFAFA;
+}
+
+/* visited link */
+.hypercolor:visited {
+  color: white;
+}
+
+
+/* selected link */
+.hypercolor:active {
+  color: white;
+}
+.display-4{
+    font-family: 'Playfair Display', serif;
+}
+
+.modal-title{
+    font-family: 'Playfair Display', serif;
+    text-shadow: 3px 3px 3px #aaa;
+}
+.date-text{
+    line-height: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.countdown-text{
+    line-height: 0.8;
+}
+.countdown {
+    font-family: 'Roboto', sans-serif;
+    font-size:36px;
+    color:#e8b923
+}
+.rotate {
+    transform: rotate(90deg);
+}
+.gonnaBeOnTheBottom {
+    position:absolute;
+    width:300px;
+    height:60px;
+    bottom:0px;
+    right:25%;
+    left:50%;
+    margin-left:-150px;
+}
+.gonnaBeOnTheBottom2 {
+    position:absolute;
+    width:300px;
+    height:90px;
+    bottom:60px;
+    right:25%;
+    left:50%;
+    margin-left:-150px;
+}
+.jumbotron {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%), url("/static/main2.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+.bgcolor1 {
+    background-color: #ffffff;
+}
+
+.attire-dialog{
+      overflow-y: initial !important
+}
+.attire-body{
+  height: 1000px;
+  max-height: calc(100vh - 230px);
+  overflow-y: auto;
+}
+.text-shadow{
+    text-shadow: 2px 2px 2px #000;
+}
+.cardfont {
+        font-family: 'Playfair Display', serif;
+        text-shadow: 3px 3px 3px #aaa;
+        font-size:24px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        color: #3b444b;
+}
+
+@media screen and (max-width: 768px) {
+.cardfont{
+    font-family: 'Playfair Display', serif;
+    text-shadow: 3px 3px 3px #aaa;
+    font-size:35px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #3b444b;
+
+}
+}
+
+
+.cardfont2 {
+        font-family: 'Playfair Display', serif;
+        text-shadow: 4px 4px 4px #aaa;
+        font-size:3vw;
+}
+
+.c {
+  padding: 15px;
+  margin-top: 30px;
+  box-shadow: 0 0 16px 1px rgba(0, 0, 0, 0.1);
+}
+
+.cimg {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 3px 20px 11px rgba(0, 0, 0, 0.2);
+    filter: grayscale(95%);
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+
+}
+
+
+.c .top-sec {
+  margin-top: -45px;
+  margin-bottom: 15px;
+}
+
+.card {
+
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.9) 0%,rgba(255,255,255,0.9) 100%), url("/static/card1.jpg");
+    background-size: cover;
+    border-color: #808080;
+}
+
+
+.blob {
+
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.9) 0%,rgba(255,255,255,0.9) 100%), url("/static/card1.jpg");
+    background-size: cover;
+    border-color: #808080;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (min-width: 768px) {
+  .cimg:hover {
+    filter: grayscale(5%);
+    transform: scale(1.05);
+}
+}
+
+.scroll-color {
+
+    filter: grayscale(5%);
+    transform: scale(1.05);
+
+}
+
+.checkmark__circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke: #e8b923;
+  fill: none;
+  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.checkmark {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: block;
+  stroke-width: 2;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  margin: 2% auto;
+  box-shadow: inset 0px 0px 0px #e8b923;
+  animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+}
+
+.checkmark__check {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes scale {
+  0%, 100% {
+    transform: none;
+  }
+  50% {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+}
+@keyframes fill {
+  100% {
+    box-shadow: inset 0px 0px 0px 30px #e8b923;
+  }
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.picrow::after {
+  content: "";
+  clear: both;
+  display: table;
+}
